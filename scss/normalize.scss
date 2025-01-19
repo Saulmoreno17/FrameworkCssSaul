@@ -1,0 +1,26 @@
+// **_normalize.scss**
+@use 'variables' as *;
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: $blanco-color;
+    color: $negro-color;
+  }
+
+  .requadro{
+    background-color: antiquewhite;
+    padding: 30px;
+    border: 1px solid black;
+  }
+  

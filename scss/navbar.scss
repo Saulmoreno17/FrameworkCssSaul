@@ -1,0 +1,142 @@
+// **_navbar.scss**
+@use 'variables' as *;
+
+// Navbar básica
+.navbarnormal{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $negro-color;
+  padding: $spacing-sm;
+
+  .navbar-brand {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+
+  .navbar-nav {
+    display: flex;
+    list-style: none;
+
+    .nav-item {
+      margin: 0 $spacing-sm;
+
+      .nav-link {
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+          color: $azul-color;
+        }
+      }
+    }
+  }
+}
+
+// Navbar transparente con borde inferior
+.transparent-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  border-bottom: 1px solid $gris-color;
+  padding: $spacing-md;
+
+  .navbar-brand {
+    color: $gris-color;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+
+  .navbar-nav {
+    display: flex;
+    list-style: none;
+
+    .nav-item {
+      margin: 0 $spacing-md;
+
+      .nav-link {
+        color: $gris-color;
+        text-decoration: none;
+
+        &:hover {
+          color: $azul-color;
+        }
+      }
+    }
+  }
+}
+
+// Navbar centrada con fondo degradado
+.centered-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, $azul-color, $verde-color);
+  padding: $spacing-lg;
+
+  .navbar-brand {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.8rem;
+  }
+
+  .navbar-nav {
+    display: flex;
+    list-style: none;
+
+    .nav-item {
+      margin: 0 $spacing-lg;
+
+      .nav-link {
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+// Navbar minimalista con iconos
+.minimal-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $blanco-color;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: $spacing-sm;
+
+  .navbar-brand {
+    color: $negro-color;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+
+  .navbar-nav {
+    display: flex;
+    list-style: none;
+
+    .nav-item {
+      margin: 0 $spacing-sm;
+
+      .nav-link {
+        display: flex;
+        align-items: center;
+        color: $negro-color;
+        text-decoration: none;
+
+        svg {
+          margin-right: $spacing-sm;
+        }
+
+        &:hover {
+          color: $azul-color;
+        }
+      }
+    }
+  }
+}

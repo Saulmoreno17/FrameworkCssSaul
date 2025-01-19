@@ -1,0 +1,108 @@
+@use 'variables' as *;
+
+// Formulario Básico
+.form-group {
+  margin-bottom: $spacing-base;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: $spacing-sm;
+  border: 1px solid #ccc;
+  border-radius: $border-radius;
+  font-size: 1rem;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: $azul-color;
+  outline: none;
+}
+
+// Tipo 2: Formulario con Validación
+.input-error {
+  border-color: $rojo-color;
+}
+
+.error-message {
+  color: $rojo-color;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.input-valid {
+  border-color: $verde-color;
+}
+
+// Botón de Envío
+.form-submit {
+  display: inline-block;
+  padding: $spacing-sm $spacing-lg;
+  background-color: $azul-color;
+  color: #fff;
+  border: none;
+  border-radius: $border-radius;
+  cursor: pointer;
+  font-size: 1rem;
+
+  &:hover {
+    background-color: darken($azul-color, 10%);
+  }
+
+  &:disabled {
+    background-color: $gris-color;
+    cursor: not-allowed;
+  }
+}
+
+// Tipo 3: Formulario en columna (vertical)
+.form-group {
+  margin-bottom: $spacing-md;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+
+textarea {
+  height: 150px;
+}
+
+.form-row {
+  display: flex;
+  gap: $spacing-md;
+  margin-bottom: $spacing-lg;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.form-submit {
+  padding: $spacing-sm $spacing-lg;
+  background-color: $azul-color;
+  color: #fff;
+  border: none;
+  border-radius: $border-radius;
+  cursor: pointer;
+  font-size: 1rem;
+  display: block;
+  margin-top: $spacing-md;
+
+  &:hover {
+    background-color: darken($azul-color, 10%);
+  }
+
+  &:disabled {
+    background-color: $gris-color;
+    cursor: not-allowed;
+  }
+}

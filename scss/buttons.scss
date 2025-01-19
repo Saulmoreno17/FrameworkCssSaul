@@ -1,0 +1,77 @@
+// Botones.scss
+@use 'variables' as *;
+@use 'sass:color'; // Importa el módulo de color de Sass
+
+.button {
+    display: inline-block;
+    padding: $spacing-sm $spacing-base;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: $border-radius;
+    cursor: pointer;
+
+    @if $enable-transitions {
+      transition: all 0.3s ease;
+    } @else {
+      transition: none;
+    }
+
+    &--botonazul {
+      background-color: $azul-color;
+      color: #fff;
+      border-color: $azul-color;
+
+      &:hover {
+        // Usar color.adjust() en lugar de darken()
+        background-color: color.adjust($azul-color, $lightness: -10%); // Ajusta el color haciéndolo un 10% más oscuro
+      }
+    }
+
+    &--botongris {
+      background-color: $gris-color;
+      color: #fff;
+      border-color: $gris-color;
+
+      &:hover {
+        // Usar color.adjust() en lugar de darken()
+        background-color: color.adjust($gris-color, $lightness: -10%); // Ajusta el color haciéndolo un 10% más oscuro
+      }
+    }
+
+    &--botonrojo {
+      background-color: $rojo-color;
+      color: #fff;
+      border-color: $rojo-color;
+
+      &:hover {
+        // Usar color.adjust() en lugar de darken()
+        background-color: color.adjust($rojo-color, $lightness: -10%); // Ajusta el color haciéndolo un 10% más oscuro
+      }
+    }
+
+    &--botonverde {
+      background-color: $verde-color;
+      color: #fff;
+      border-color: $verde-color;
+
+      &:hover {
+        // Usar color.adjust() en lugar de darken()
+        background-color: color.adjust($verde-color, $lightness: -10%); // Ajusta el color haciéndolo un 10% más oscuro
+      }
+    }
+
+    &--botonamarillo {
+      background-color: $amarillo-color;
+      color: #fff;
+      border-color: $amarillo-color;
+
+      &:hover {
+        // Usar color.adjust() en lugar de darken()
+        background-color: color.adjust($amarillo-color, $lightness: -10%); // Ajusta el color haciéndolo un 10% más oscuro
+      }
+    }
+
+   
+}

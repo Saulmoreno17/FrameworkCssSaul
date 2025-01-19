@@ -1,0 +1,470 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+.requadro {
+  background-color: antiquewhite;
+  padding: 30px;
+  border: 1px solid black;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.input-error {
+  border-color: #dc3545;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.input-valid {
+  border-color: #28a745;
+}
+
+.form-submit {
+  display: inline-block;
+  padding: 8px 2rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.form-submit:hover {
+  background-color: rgb(0, 98.4, 204);
+}
+.form-submit:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+
+textarea {
+  height: 150px;
+}
+
+.form-row {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.form-submit {
+  padding: 8px 2rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-size: 1rem;
+  display: block;
+  margin-top: 1.5rem;
+}
+.form-submit:hover {
+  background-color: rgb(0, 98.4, 204);
+}
+.form-submit:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 8px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -8px;
+}
+
+.col {
+  flex: 1;
+  padding: 8px;
+}
+
+.col-6 {
+  flex: 0 0 50%;
+}
+
+.col-4 {
+  flex: 0 0 33.3333%;
+}
+
+.col-3 {
+  flex: 0 0 25%;
+}
+
+.col-2 {
+  flex: 0 0 16.6667%;
+}
+
+.col-custom {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.25rem;
+}
+
+.img-responsive {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.img-small {
+  width: 50%;
+  height: auto;
+}
+
+.img-medium {
+  width: 75%;
+  height: auto;
+}
+
+.img-large {
+  width: 100%;
+  height: auto;
+}
+
+.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-left {
+  float: left;
+  margin-right: 1rem;
+}
+
+.img-right {
+  float: right;
+  margin-left: 1rem;
+}
+
+.img-thumbnail {
+  padding: 0.25rem;
+  background-color: #6c757d;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+}
+
+.img-hover-zoom {
+  transition: transform 0.3s ease-in-out;
+}
+.img-hover-zoom:hover {
+  transform: scale(1.1);
+}
+
+.navbarnormal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #343a40;
+  padding: 8px;
+}
+.navbarnormal .navbar-brand {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.navbarnormal .navbar-nav {
+  display: flex;
+  list-style: none;
+}
+.navbarnormal .navbar-nav .nav-item {
+  margin: 0 8px;
+}
+.navbarnormal .navbar-nav .nav-item .nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+.navbarnormal .navbar-nav .nav-item .nav-link:hover {
+  color: #007bff;
+}
+
+.transparent-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  border-bottom: 1px solid #6c757d;
+  padding: 1.5rem;
+}
+.transparent-navbar .navbar-brand {
+  color: #6c757d;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.transparent-navbar .navbar-nav {
+  display: flex;
+  list-style: none;
+}
+.transparent-navbar .navbar-nav .nav-item {
+  margin: 0 1.5rem;
+}
+.transparent-navbar .navbar-nav .nav-item .nav-link {
+  color: #6c757d;
+  text-decoration: none;
+}
+.transparent-navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #007bff;
+}
+
+.centered-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #007bff, #28a745);
+  padding: 2rem;
+}
+.centered-navbar .navbar-brand {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+.centered-navbar .navbar-nav {
+  display: flex;
+  list-style: none;
+}
+.centered-navbar .navbar-nav .nav-item {
+  margin: 0 2rem;
+}
+.centered-navbar .navbar-nav .nav-item .nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+.centered-navbar .navbar-nav .nav-item .nav-link:hover {
+  text-decoration: underline;
+}
+
+.minimal-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 8px;
+}
+.minimal-navbar .navbar-brand {
+  color: #343a40;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.minimal-navbar .navbar-nav {
+  display: flex;
+  list-style: none;
+}
+.minimal-navbar .navbar-nav .nav-item {
+  margin: 0 8px;
+}
+.minimal-navbar .navbar-nav .nav-item .nav-link {
+  display: flex;
+  align-items: center;
+  color: #343a40;
+  text-decoration: none;
+}
+.minimal-navbar .navbar-nav .nav-item .nav-link svg {
+  margin-right: 8px;
+}
+.minimal-navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #007bff;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.table th, .table td {
+  border: 1px solid #dee2e6;
+  padding: 8px;
+  text-align: left;
+  font-size: 16px;
+  vertical-align: middle;
+  transition: background-color 0.3s ease;
+}
+.table th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+  color: #6c757d;
+}
+.table tr:hover {
+  background-color: rgba(108, 117, 125, 0.05);
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(108, 117, 125, 0.1);
+}
+
+.table-bordered th, .table-bordered td {
+  border: 2px solid #6c757d;
+}
+
+.table-hover tr:hover {
+  background-color: #007bff;
+  cursor: pointer;
+}
+
+.table-sm th, .table-sm td {
+  padding: 8px;
+}
+
+.table-fixed-header thead {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #f8f9fa;
+}
+
+.table-center th, .table-center td {
+  text-align: center;
+}
+
+.table-borderless th, .table-borderless td {
+  border: none;
+}
+
+.table-alternate-background tbody tr:nth-of-type(2n) {
+  background-color: rgba(108, 117, 125, 0.05);
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.float-left {
+  float: left !important;
+}
+
+.float-right {
+  float: right !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.button {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button--botonazul {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+.button--botonazul:hover {
+  background-color: rgb(0, 98.4, 204);
+}
+.button--botongris {
+  background-color: #6c757d;
+  color: #fff;
+  border-color: #6c757d;
+}
+.button--botongris:hover {
+  background-color: rgb(84.3605150215, 91.3905579399, 97.6394849785);
+}
+.button--botonrojo {
+  background-color: #dc3545;
+  color: #fff;
+  border-color: #dc3545;
+}
+.button--botonrojo:hover {
+  background-color: rgb(189.2151898734, 32.7848101266, 47.7721518987);
+}
+.button--botonverde {
+  background-color: #28a745;
+  color: #fff;
+  border-color: #28a745;
+}
+.button--botonverde:hover {
+  background-color: rgb(30.1449275362, 125.8550724638, 52);
+}
+.button--botonamarillo {
+  background-color: #ffc107;
+  color: #fff;
+  border-color: #ffc107;
+}
+.button--botonamarillo:hover {
+  background-color: rgb(211, 158.25, 0);
+}
+
+/*# sourceMappingURL=archivo.css.map */

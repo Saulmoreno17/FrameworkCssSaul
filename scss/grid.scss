@@ -1,0 +1,52 @@
+// **_grid.scss**
+@use 'variables' as *;
+
+// Container setup
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 $spacing-sm;
+}
+
+// Row setup
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -$spacing-sm;
+}
+
+// General column setup
+.col {
+    flex: 1;
+    padding: $spacing-sm;
+}
+
+// Specific column widths
+.col-6 {
+    flex: 0 0 50%;
+}
+
+.col-4 {
+    flex: 0 0 33.3333%;
+}
+
+// New column widths
+.col-3 {
+    flex: 0 0 25%;
+}
+
+.col-2 {
+    flex: 0 0 16.6667%;
+}
+
+// Mixin for custom column widths
+@mixin col-width($columns) {
+    flex: 0 0 calc(100% / $columns);
+    max-width: calc(100% / $columns);
+}
+
+// Example usage of the mixin
+.col-custom {
+    @include col-width(5); // Creates a column that takes up 1/5 of the row
+}

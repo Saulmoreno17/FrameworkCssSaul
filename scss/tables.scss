@@ -1,0 +1,95 @@
+// **_tables.scss**
+@use 'variables' as *;
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: $spacing-base;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+  // Estilo de celdas
+  th, td {
+    border: 1px solid #dee2e6;
+    padding: $spacing-sm;
+    text-align: left;
+    font-size: $font-size-base;
+    vertical-align: middle; // Centra verticalmente el contenido
+    transition: background-color 0.3s ease;
+  }
+
+  th {
+    background-color: $blanco-color;
+    font-weight: bold;
+    color: $gris-color;
+  }
+
+  // Bordes redondeados para la tabla
+  border-radius: 8px;
+  overflow: hidden;
+
+  // Estilo de las celdas al pasar el ratón por encima
+  tr:hover {
+    background-color: rgba($gris-color, 0.05);
+  }
+}
+
+// Tabla con filas alternadas de color
+.table-striped {
+  tbody tr:nth-of-type(odd) {
+    background-color: rgba($gris-color, 0.1);
+  }
+}
+
+// Tabla con bordes de colores personalizados
+.table-bordered {
+  th, td {
+    border: 2px solid $gris-color;
+  }
+}
+
+// Tabla con filas de alto contraste cuando se pasa el ratón por encima
+.table-hover {
+  tr:hover {
+    background-color: $azul-color; // Puede ser un color más contrastado para interacciones
+    cursor: pointer; // Cambiar el cursor al pasar el ratón
+  }
+}
+
+// Estilo para tablas de tamaño pequeño
+.table-sm {
+  th, td {
+    padding: $spacing-sm;
+  }
+}
+
+// Estilo para tablas con cabeceras fijas
+.table-fixed-header {
+  thead {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: $blanco-color;
+  }
+}
+
+// Estilo para tablas con el texto centrado
+.table-center {
+  th, td {
+    text-align: center;
+  }
+}
+
+// Estilo para tablas sin bordes
+.table-borderless {
+  th, td {
+    border: none;
+  }
+}
+
+// Tabla con filas de fondo alternativo
+.table-alternate-background {
+  tbody tr:nth-of-type(2n) {
+    background-color: rgba($gris-color, 0.05);
+  }
+}
+

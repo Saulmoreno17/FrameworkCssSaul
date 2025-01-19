@@ -1,0 +1,32 @@
+// **_utilities.scss**
+@use 'variables' as *;
+// Clearfix utility
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  // Float utilities
+  .float-left {
+    float: left !important;
+  }
+  
+  .float-right {
+    float: right !important;
+  }
+  
+  // Text alignment utility
+  .text-center {
+    text-align: center !important;
+  }
+  
+  // Shadow utility
+  .shadow {
+    @if $enable-shadows {
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    } @else {
+      box-shadow: none;
+    }
+  }
+  

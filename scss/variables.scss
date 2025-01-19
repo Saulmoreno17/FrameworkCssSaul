@@ -1,0 +1,64 @@
+// ----------------------------------------------
+// Breakpoints
+// ----------------------------------------------
+$breakpoint-xs: 0; // Extra small devices
+$breakpoint-sm: 576px; // Small devices
+$breakpoint-md: 768px; // Medium devices
+$breakpoint-lg: 992px; // Large devices
+$breakpoint-xl: 1200px; // Extra large devices
+
+// ----------------------------------------------
+// Color Scheme
+// ----------------------------------------------
+$azul-color: #007bff;
+$gris-color: #6c757d;
+$verde-color: #28a745;
+$amarillo-color: #ffc107;
+$rojo-color: #dc3545;
+$blanco-color: #f8f9fa;
+$negro-color: #343a40;
+
+$text-color: #212529;
+$background-color: #ffffff;
+
+// ----------------------------------------------
+// Enable Features (Static Values)
+// ----------------------------------------------
+$enable-rounded: true; // Enable rounded corners
+$enable-shadows: true; // Enable box shadows
+$enable-gradients: false; // Enable gradients
+$enable-transitions: true; // Enable CSS transitions
+
+// Define static values for conditional features
+$border-radius: 0.25rem; // Static value for rounded corners
+$box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); // Static value for shadows
+$transition: all 0.2s ease-in-out; // Static value for transitions
+
+// Adjust based on feature toggles
+@if not $enable-rounded {
+  $border-radius: 0; // No rounded corners
+}
+
+@if not $enable-shadows {
+  $box-shadow: none; // Disable shadows
+}
+
+@if not $enable-transitions {
+  $transition: none; // Disable transitions
+}
+
+// ----------------------------------------------
+// Spacing (Margins and Paddings)
+// ----------------------------------------------
+$spacing-base: 16px; // Default spacing
+$spacing-sm: 8px;
+$spacing-md: 1.5rem;
+$spacing-lg: 2rem;
+
+// ----------------------------------------------
+// Typography
+// ----------------------------------------------
+$font-family-base: "Helvetica Neue", Arial, sans-serif;
+$font-size-base: 16px;
+$font-size-sm: 14px;
+$font-size-lg: 18px;

@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejemplo Completo de CSS</title>
+        <link rel="stylesheet" href="scss/archivo.css">
+    </head>
+    <body>
+        <nav class="navbarnormal">
+            <a href="#" class="navbar-brand">Framework Saúl Moreno</a>
+            
+        </nav>
+        
+        <div class="container">
+            <h1 class="text-center">Índice</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#Botones">Botones</a>
+                    </li>
+                    <li>
+                        <a href="#Navbars">Navbars</a>
+                    </li>
+                    <li>
+                        <a href="#Grids">Grids</a>
+                    </li>
+                    <li>
+                        <a href="#Forms">Forms</a>
+                    </li>
+                    <li>
+                        <a href="#Tablas">Tablas</a>
+                    </li>
+                    <li>
+                        <a href="#Imagenes">Imagenes</a>
+                    </li>
+                </ul>
+            </nav>
+            <br>
+            <div class="text-center">
+              <p>
+                Framework creado por Saúl Moreno que incluye Botones con difrerentes colores y animaciones, tres Navbars prefedinidos para no perder tiempo creando uno nuevo,
+                Grids para organizar la estructura de tu sitio web, plantillas de Formularios para facilitar la cración de estos, varios estilos de tabla para el que mas se adapte a tus necesidades,
+                y por último la sección de Imagenes que nos permite adaptar su tamaño y ordenarlas como mejor nos vaya.
+            </p>
+            </div>
+            <br>
+            <section id="Botones">
+                <h2 class="text-center">Botones</h2>
+                <div class="text-center">
+                    <a href="https://moodle.iescarlesvallbona.cat/mod/assign/view.php?id=144018" class="button">Botón</a>
+                    <a href="" class="button button--botonazul">Botón Azul</a>
+                    <a href="#" class="button button--botongris">Botón Gris</a>
+                    <a href="#" class="button button--botonrojo">Botón Rojo</a>
+                    <a href="#" class="button button--botonverde">Botón Verde</a>
+                    <a href="#" class="button button--botonamarillo">Botón Amarillo</a>
+                </div>
+                <br>
+                <div class="requadro">
+                  <pre>
+                      <code>
+                          &lt;a href="#" class="button"&gt;Botón&lt;/a&gt;
+            &lt;a href="#" class="button button--botonazul"&gt;Botón Azul&lt;/a&gt;
+            &lt;a href="#" class="button button--botongris"&gt;Botón Gris&lt;/a&gt;
+            &lt;a href="#" class="button button--botonrojo"&gt;Botón Rojo&lt;/a&gt;
+            &lt;a href="#" class="button button--botonverde"&gt;Botón Verde&lt;/a&gt;
+            &lt;a href="#" class="button button--botonamarillo"&gt;Botón Amarillo&lt;/a&gt;
+                      </code>
+                  </pre>
+              </div>
+            </section>
+            <br>            
+            <section id="Navbars">
+                <h2 class="text-center">Navbars</h2>
+                <div class="text-center">
+                    <a href="navcentrado.html" class="button button--botonazul">Navbar Centrado</a>
+                    <a href="navminimalista.html" class="button button--botonazul">Navbar Minimalista</a>
+                    <a href="navtransparente.html" class="button button--botonazul">Navbar Transparente</a>
+                </div>
+                <br>
+                <div class="requadro">
+                    <pre>
+                        <code>
+                            &lt;a href="navcentrado.html" class="button button--botonazul"&gt;Navbar Centrado&lt;/a&gt;
+          &lt;a href="navminimalista.html" class="button button--botonazul"&gt;Navbar Minimalista&lt;/a&gt;
+          &lt;a href="navtransparente.html" class="button button--botonazul"&gt;Navbar Transparente&lt;/a&gt;
+                        </code>
+                    </pre>
+                </div>
+            </section>
+            <br>
+            <section id="Grids">
+                <div class="container">
+                    <h2 class="text-center">Grids</h2>
+                    <div class="row">
+                        <div class="col-custom">Column 1</div>
+                        <div class="col-custom">Column 2</div>
+                        <div class="col-custom">Column 3</div>
+                        <div class="col-custom">Column 4</div>
+                        <div class="col-custom">Column 5</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">Half Width</div>
+                        <div class="col-6">Half Width</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">One Third</div>
+                        <div class="col-4">One Third</div>
+                        <div class="col-4">One Third</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">One Fourth</div>
+                        <div class="col-3">One Fourth</div>
+                        <div class="col-3">One Fourth</div>
+                        <div class="col-3">One Fourth</div>
+                    </div>
+                </div>
+                <br>
+                <div class="requadro">
+                    <pre>
+                        <code>
+                            &lt;div class=&quot;container&quot;&gt;
+              &lt;div class=&quot;row&quot;&gt;
+                  &lt;!-- Custom Columns (1/5) --&gt;
+                  &lt;div class=&quot;col-custom&quot;&gt;Column 1&lt;/div&gt;
+                  &lt;div class=&quot;col-custom&quot;&gt;Column 2&lt;/div&gt;
+                  &lt;div class=&quot;col-custom&quot;&gt;Column 3&lt;/div&gt;
+                  &lt;div class=&quot;col-custom&quot;&gt;Column 4&lt;/div&gt;
+                  &lt;div class=&quot;col-custom&quot;&gt;Column 5&lt;/div&gt;
+              &lt;/div&gt;
+    
+              &lt;div class=&quot;row&quot;&gt;
+                  &lt;!-- Predefined Columns --&gt;
+                  &lt;div class=&quot;col-6&quot;&gt;Half Width&lt;/div&gt;
+                  &lt;div class=&quot;col-6&quot;&gt;Half Width&lt;/div&gt;
+              &lt;/div&gt;
+    
+              &lt;div class=&quot;row&quot;&gt;
+                  &lt;div class=&quot;col-4&quot;&gt;One Third&lt;/div&gt;
+                  &lt;div class=&quot;col-4&quot;&gt;One Third&lt;/div&gt;
+                  &lt;div class=&quot;col-4&quot;&gt;One Third&lt;/div&gt;
+              &lt;/div&gt;
+    
+              &lt;div class=&quot;row&quot;&gt;
+                  &lt;div class=&quot;col-3&quot;&gt;One Fourth&lt;/div&gt;
+                  &lt;div class=&quot;col-3&quot;&gt;One Fourth&lt;/div&gt;
+                  &lt;div class=&quot;col-3&quot;&gt;One Fourth&lt;/div&gt;
+                  &lt;div class=&quot;col-3&quot;&gt;One Fourth&lt;/div&gt;
+              &lt;/div&gt;
+          &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+            </section>
+            <br>
+            <section id="Forms">
+                <h2 class="text-center">Forms</h2>
+                <form action="#" method="POST" class="form-basic">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="4"
+                            required
+                        ></textarea>
+                    </div>
+                    <button type="submit" class="button button--botonazul">Enviar</button>
+                </form>
+                <br>
+                <div class="requadro">
+                    <pre>
+                        <code>
+                            &lt;h2 class=&quot;text-center&quot;&gt;Forms&lt;/h2&gt;
+          &lt;form action=&quot;#&quot; method=&quot;POST&quot; class=&quot;form-basic&quot;&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;label for=&quot;name&quot;&gt;Nombre&lt;/label&gt;
+              &lt;input type=&quot;text&quot; id=&quot;name&quot; name=&quot;name&quot; required&gt;
+            &lt;/div&gt;
+    
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;label for=&quot;email&quot;&gt;Correo Electrónico&lt;/label&gt;
+              &lt;input type=&quot;email&quot; id=&quot;email&quot; name=&quot;email&quot; required&gt;
+            &lt;/div&gt;
+    
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;label for=&quot;message&quot;&gt;Mensaje&lt;/label&gt;
+              &lt;textarea id=&quot;message&quot; name=&quot;message&quot; rows=&quot;4&quot; required&gt;&lt;/textarea&gt;
+            &lt;/div&gt;
+    
+            &lt;button type=&quot;submit&quot; class=&quot;button button--botonazul&quot;&gt;Enviar&lt;/button&gt;
+          &lt;/form&gt;
+                        </code>
+                    </pre>
+                </div>
+                <br>
+                <form action="#" method="POST" class="form-validation">
+                    <div class="form-group">
+                        <label for="username">Nombre de Usuario</label>
+                        <input
+                            type="text"
+                            id="username"
+                            name="username"
+                            class="input-error"
+                            required
+                        >
+                        <div class="error-message">El nombre de usuario es obligatorio.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            class="input-valid"
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Contraseña</label>
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            required
+                        >
+                    </div>
+                    <button type="submit" class="button button--botonazul">Registrarse</button>
+                </form>
+                <br>
+                <div class="requadro">
+                    <pre>
+                        <code>
+                            &lt;form action=&quot;#&quot; method=&quot;POST&quot; class=&quot;form-validation&quot;&gt;
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;label for=&quot;username&quot;&gt;Nombre de Usuario&lt;/label&gt;
+              &lt;input type=&quot;text&quot; id=&quot;username&quot; name=&quot;username&quot; class=&quot;input-error&quot; required&gt;
+              &lt;div class=&quot;error-message&quot;&gt;El nombre de usuario es obligatorio.&lt;/div&gt;
+            &lt;/div&gt;
+    
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;label for=&quot;email&quot;&gt;Correo Electrónico&lt;/label&gt;
+              &lt;input type=&quot;email&quot; id=&quot;email&quot; name=&quot;email&quot; class=&quot;input-valid&quot; required&gt;
+            &lt;/div&gt;
+    
+            &lt;div class=&quot;form-group&quot;&gt;
+              &lt;label for=&quot;password&quot;&gt;Contraseña&lt;/label&gt;
+              &lt;input type=&quot;password&quot; id=&quot;password&quot; name=&quot;password&quot; required&gt;
+            &lt;/div&gt;
+    
+            &lt;button type=&quot;submit&quot; class=&quot;button button--botonazul&quot;&gt;Registrarse&lt;/button&gt;
+          &lt;/form&gt;
+                        </code>
+                    </pre>
+                </div>
+                <br>
+                <form action="#" method="POST" class="form-column">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="first-name">Nombre</label>
+                            <input
+                                type="text"
+                                id="first-name"
+                                name="first-name"
+                                required
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Apellido</label>
+                            <input
+                                type="text"
+                                id="last-name"
+                                name="last-name"
+                                required
+                            >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="4"
+                            required
+                        ></textarea>
+                    </div>
+                    <button type="submit" class="button button--botonazul">Enviar</button>
+                </form>
+                <div class="requadro">
+                    <pre>
+                        <code>
+                            &lt;form action="#" method="POST" class="form-basic"&gt;
+            &lt;div class="form-group"&gt;
+              &lt;label for="name"&gt;Nombre&lt;/label&gt;
+              &lt;input type="text" id="name" name="name" required&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group"&gt;
+              &lt;label for="email"&gt;Correo Electrónico&lt;/label&gt;
+              &lt;input type="email" id="email" name="email" required&gt;
+            &lt;/div&gt;
+            &lt;div class="form-group"&gt;
+              &lt;label for="message"&gt;Mensaje&lt;/label&gt;
+              &lt;textarea id="message" name="message" rows="4" required&gt;&lt;/textarea&gt;
+            &lt;/div&gt;
+            &lt;button type="submit" class="button button--botonazul"&gt;Enviar&lt;/button&gt;
+          &lt;/form&gt;
+                        </code>
+                    </pre>
+                </div>
+            </section>
+            <section id="Tablas">
+                <h2 class="text-center">Tablas</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Juan Pérez</td>
+                            <td>29</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Ana Gómez</td>
+                            <td>34</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Carlos Ruiz</td>
+                            <td>40</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <div class="requadro">
+                    <pre>
+                        <code>
+                            &lt;table class=&quot;table&quot;&gt;
+            &lt;thead&gt;
+              &lt;tr&gt;
+                &lt;th&gt;#&lt;/th&gt;
+                &lt;th&gt;Nombre&lt;/th&gt;
+                &lt;th&gt;Edad&lt;/th&gt;
+              &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+              &lt;tr&gt;
+                &lt;td&gt;1&lt;/td&gt;
+                &lt;td&gt;Juan Pérez&lt;/td&gt;
+                &lt;td&gt;29&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;2&lt;/td&gt;
+                &lt;td&gt;Ana Gómez&lt;/td&gt;
+                &lt;td&gt;34&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;3&lt;/td&gt;
+                &lt;td&gt;Carlos Ruiz&lt;/td&gt;
+                &lt;td&gt;40&lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;
+                        </code>
+                    </pre>
+                </div>
+                <br>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Juan Pérez</td>
+                            <td>29</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Ana Gómez</td>
+                            <td>34</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Carlos Ruiz</td>
+                            <td>40</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <div class="requadro">
+                    <pre>
+                        <code>
+                            &lt;table class=&quot;table table-striped&quot;&gt;
+            &lt;thead&gt;
+              &lt;tr&gt;
+                &lt;th&gt;#&lt;/th&gt;
+                &lt;th&gt;Nombre&lt;/th&gt;
+                &lt;th&gt;Edad&lt;/th&gt;
+              &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+              &lt;tr&gt;
+                &lt;td&gt;1&lt;/td&gt;
+                &lt;td&gt;Juan Pérez&lt;/td&gt;
+                &lt;td&gt;29&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;2&lt;/td&gt;
+                &lt;td&gt;Ana Gómez&lt;/td&gt;
+                &lt;td&gt;34&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;3&lt;/td&gt;
+                &lt;td&gt;Carlos Ruiz&lt;/td&gt;
+                &lt;td&gt;40&lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;
+                        </code>
+                    </pre>
+                </div>
+                <br>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Juan Pérez</td>
+                            <td>29</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Ana Gómez</td>
+                            <td>34</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Carlos Ruiz</td>
+                            <td>40</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <div class="requadro">
+                    <pre>
+                        <code>
+                            &lt;table class=&quot;table table-bordered&quot;&gt;
+            &lt;thead&gt;
+              &lt;tr&gt;
+                &lt;th&gt;#&lt;/th&gt;
+                &lt;th&gt;Nombre&lt;/th&gt;
+                &lt;th&gt;Edad&lt;/th&gt;
+              &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+              &lt;tr&gt;
+                &lt;td&gt;1&lt;/td&gt;
+                &lt;td&gt;Juan Pérez&lt;/td&gt;
+                &lt;td&gt;29&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;2&lt;/td&gt;
+                &lt;td&gt;Ana Gómez&lt;/td&gt;
+                &lt;td&gt;34&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;3&lt;/td&gt;
+                &lt;td&gt;Carlos Ruiz&lt;/td&gt;
+                &lt;td&gt;40&lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;
+                        </code>
+                    </pre>
+                </div>
+                <br>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Juan Pérez</td>
+                            <td>29</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Ana Gómez</td>
+                            <td>34</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Carlos Ruiz</td>
+                            <td>40</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <div class="requadro">
+                    <pre>
+                        <code>
+                            &lt;table class=&quot;table table-hover&quot;&gt;
+            &lt;thead&gt;
+              &lt;tr&gt;
+                &lt;th&gt;#&lt;/th&gt;
+                &lt;th&gt;Nombre&lt;/th&gt;
+                &lt;th&gt;Edad&lt;/th&gt;
+              &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+              &lt;tr&gt;
+                &lt;td&gt;1&lt;/td&gt;
+                &lt;td&gt;Juan Pérez&lt;/td&gt;
+                &lt;td&gt;29&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;2&lt;/td&gt;
+                &lt;td&gt;Ana Gómez&lt;/td&gt;
+                &lt;td&gt;34&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;3&lt;/td&gt;
+                &lt;td&gt;Carlos Ruiz&lt;/td&gt;
+                &lt;td&gt;40&lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;
+                        </code>
+                    </pre>
+                </div>
+                <br>
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Juan Pérez</td>
+                            <td>29</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Ana Gómez</td>
+                            <td>34</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Carlos Ruiz</td>
+                            <td>40</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <div class="requadro">
+                    <pre>
+                        <code>
+                            &lt;table class=&quot;table table-sm&quot;&gt;
+            &lt;thead&gt;
+              &lt;tr&gt;
+                &lt;th&gt;#&lt;/th&gt;
+                &lt;th&gt;Nombre&lt;/th&gt;
+                &lt;th&gt;Edad&lt;/th&gt;
+              &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+              &lt;tr&gt;
+                &lt;td&gt;1&lt;/td&gt;
+                &lt;td&gt;Juan Pérez&lt;/td&gt;
+                &lt;td&gt;29&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;2&lt;/td&gt;
+                &lt;td&gt;Ana Gómez&lt;/td&gt;
+                &lt;td&gt;34&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;3&lt;/td&gt;
+                &lt;td&gt;Carlos Ruiz&lt;/td&gt;
+                &lt;td&gt;40&lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;
+                        </code>
+                    </pre>
+                </div>
+                <br>
+                <table class="table table-fixed-header">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Juan Pérez</td>
+                            <td>29</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Ana Gómez</td>
+                            <td>34</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Carlos Ruiz</td>
+                            <td>40</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Pedro Martín</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Laura Sánchez</td>
+                            <td>22</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Ricardo Pérez</td>
+                            <td>38</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <div class="requadro">
+                    <pre>
+                        <code>
+                            &lt;table class=&quot;table table-fixed-header&quot;&gt;
+            &lt;thead&gt;
+              &lt;tr&gt;
+                &lt;th&gt;#&lt;/th&gt;
+                &lt;th&gt;Nombre&lt;/th&gt;
+                &lt;th&gt;Edad&lt;/th&gt;
+              &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+              &lt;tr&gt;
+                &lt;td&gt;1&lt;/td&gt;
+                &lt;td&gt;Juan Pérez&lt;/td&gt;
+                &lt;td&gt;29&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;2&lt;/td&gt;
+                &lt;td&gt;Ana Gómez&lt;/td&gt;
+                &lt;td&gt;34&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;3&lt;/td&gt;
+                &lt;td&gt;Carlos Ruiz&lt;/td&gt;
+                &lt;td&gt;40&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;!-- Añadir más filas para que se vea el efecto de scroll --&gt;
+              &lt;tr&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;Pedro Martín&lt;/td&gt;&lt;td&gt;50&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;Laura Sánchez&lt;/td&gt;&lt;td&gt;22&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;td&gt;6&lt;/td&gt;&lt;td&gt;Ricardo Pérez&lt;/td&gt;&lt;td&gt;38&lt;/td&gt;&lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;
+                        </code>
+                    </pre>
+                </div>
+                <br>
+                <table class="table table-center">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Juan Pérez</td>
+                            <td>29</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Ana Gómez</td>
+                            <td>34</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Carlos Ruiz</td>
+                            <td>40</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <div class="requadro">
+                    <pre>
+                        <code>
+                            &lt;table class=&quot;table table-center&quot;&gt;
+            &lt;thead&gt;
+              &lt;tr&gt;
+                &lt;th&gt;#&lt;/th&gt;
+                &lt;th&gt;Nombre&lt;/th&gt;
+                &lt;th&gt;Edad&lt;/th&gt;
+              &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+              &lt;tr&gt;
+                &lt;td&gt;1&lt;/td&gt;
+                &lt;td&gt;Juan Pérez&lt;/td&gt;
+                &lt;td&gt;29&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;2&lt;/td&gt;
+                &lt;td&gt;Ana Gómez&lt;/td&gt;
+                &lt;td&gt;34&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;3&lt;/td&gt;
+                &lt;td&gt;Carlos Ruiz&lt;/td&gt;
+                &lt;td&gt;40&lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;
+                        </code>
+                    </pre>
+                </div>
+                <br>
+                <table class="table table-borderless">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Juan Pérez</td>
+                            <td>29</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Ana Gómez</td>
+                            <td>34</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Carlos Ruiz</td>
+                            <td>40</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <div class="requadro">
+                    <pre>
+                        <code>
+                            &lt;table class=&quot;table table-borderless&quot;&gt;
+            &lt;thead&gt;
+              &lt;tr&gt;
+                &lt;th&gt;#&lt;/th&gt;
+                &lt;th&gt;Nombre&lt;/th&gt;
+                &lt;th&gt;Edad&lt;/th&gt;
+              &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+              &lt;tr&gt;
+                &lt;td&gt;1&lt;/td&gt;
+                &lt;td&gt;Juan Pérez&lt;/td&gt;
+                &lt;td&gt;29&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;2&lt;/td&gt;
+                &lt;td&gt;Ana Gómez&lt;/td&gt;
+                &lt;td&gt;34&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;3&lt;/td&gt;
+                &lt;td&gt;Carlos Ruiz&lt;/td&gt;
+                &lt;td&gt;40&lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;
+                        </code>
+                    </pre>
+                </div>
+                <br>
+                <table class="table table-alternate-background">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Juan Pérez</td>
+                            <td>29</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Ana Gómez</td>
+                            <td>34</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Carlos Ruiz</td>
+                            <td>40</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Pedro Martín</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Laura Sánchez</td>
+                            <td>22</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <div class="requadro">
+                    <pre>
+                        <code>
+                            &lt;table class=&quot;table table-alternate-background&quot;&gt;
+            &lt;thead&gt;
+              &lt;tr&gt;
+                &lt;th&gt;#&lt;/th&gt;
+                &lt;th&gt;Nombre&lt;/th&gt;
+                &lt;th&gt;Edad&lt;/th&gt;
+              &lt;/tr&gt;
+            &lt;/thead&gt;
+            &lt;tbody&gt;
+              &lt;tr&gt;
+                &lt;td&gt;1&lt;/td&gt;
+                &lt;td&gt;Juan Pérez&lt;/td&gt;
+                &lt;td&gt;29&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;2&lt;/td&gt;
+                &lt;td&gt;Ana Gómez&lt;/td&gt;
+                &lt;td&gt;34&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;3&lt;/td&gt;
+                &lt;td&gt;Carlos Ruiz&lt;/td&gt;
+                &lt;td&gt;40&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;4&lt;/td&gt;
+                &lt;td&gt;Pedro Martín&lt;/td&gt;
+                &lt;td&gt;50&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;5&lt;/td&gt;
+                &lt;td&gt;Laura Sánchez&lt;/td&gt;
+                &lt;td&gt;22&lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/tbody&gt;
+          &lt;/table&gt;
+                        </code>
+                    </pre>
+                </div>
+            </section>
+            <br>
+            <section id="Imagenes">
+                <h2 class="text-center">Imagenes</h2>
+                <div>
+                    <h2>Imagen Responsiva</h2>
+                    <img class="img-responsive" src="gale3.jpg">
+                </div>
+                <br>
+                <div class="requadro">
+                    <pre>
+                        <code>
+                            &lt;div&gt;
+            &lt;h2&gt;Imagen Responsiva&lt;/h2&gt;
+            &lt;img class=&quot;img-responsive&quot; src=&quot;gale3.jpg&quot; &gt;
+          &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+                <br>
+                <div>
+                    <h2>Imagen Pequeña</h2>
+                    <img class="img-small" src="gale3.jpg">
+                </div>
+                <br>
+                <div class="requadro">
+                    <pre>
+                        <code>
+                            &lt;div&gt;
+            &lt;h2&gt;Imagen Pequeña&lt;/h2&gt;
+            &lt;img class=&quot;img-small&quot; src=&quot;gale3.jpg&quot; &gt;
+          &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+                <br>
+                <div>
+                    <h2>Imagen Mediana</h2>
+                    <img class="img-medium" src="gale3.jpg">
+                </div>
+                <br>
+                <div class="requadro">
+                    <pre>
+                        <code>
+                            &lt;div&gt;
+            &lt;h2&gt;Imagen Mediana&lt;/h2&gt;
+            &lt;img class=&quot;img-medium&quot; src=&quot;gale3.jpg&quot; &gt;
+          &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+                <br>
+                <div>
+                    <h2>Imagen Grande</h2>
+                    <img class="img-large" src="gale3.jpg">
+                </div>
+                <br>
+                <div class="requadro">
+                    <pre>
+                        <code>
+                            &lt;div&gt;
+            &lt;h2&gt;Imagen Grande&lt;/h2&gt;
+            &lt;img class=&quot;img-large&quot; src=&quot;gale3.jpg&quot; &gt;
+          &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+                <br>
+                <div>
+                    <h2>Imagen Centrada</h2>
+                    <img class="img-center" src="1.png">
+                </div>
+                <br>
+                <div class="requadro">
+                    <pre>
+                        <code>
+                            &lt;div&gt;
+            &lt;h2&gt;Imagen Centrada&lt;/h2&gt;
+            &lt;img class=&quot;img-center&quot; src=&quot;1.png&quot; &gt;
+          &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+                <br>
+                <div style="overflow: hidden;">
+                    <h2>Imagen Alineada a la Izquierda</h2>
+                    <img class="img-left" src="1.png">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac
+        velit id purus fermentum luctus.
+                    </p>
+                </div>
+                <br>
+                <div class="requadro">
+                    <pre>
+                        <code>
+                            &lt;div style=&quot;overflow: hidden;&quot;&gt;
+            &lt;h2&gt;Imagen Alineada a la Izquierda&lt;/h2&gt;
+            &lt;img class=&quot;img-left&quot; src=&quot;1.png&quot;&gt;
+            &lt;p&gt;
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac
+              velit id purus fermentum luctus.
+            &lt;/p&gt;
+          &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+                <br>
+                <div style="overflow: hidden;">
+                    <h2>Imagen Alineada a la Derecha</h2>
+                    <img class="img-right" src="1.png">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac
+        velit id purus fermentum luctus.
+                    </p>
+                </div>
+                <br>
+                <div class="requadro">
+                    <pre>
+                        <code>
+                            &lt;div style=&quot;overflow: hidden;&quot;&gt;
+            &lt;h2&gt;Imagen Alineada a la Derecha&lt;/h2&gt;
+            &lt;img class=&quot;img-right&quot; src=&quot;1.png&quot; &gt;
+            &lt;p&gt;
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac
+              velit id purus fermentum luctus.
+            &lt;/p&gt;
+          &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+                <br>
+                <div>
+                    <h2>Imagen con Estilo de Miniatura</h2>
+                    <img class="img-thumbnail" src="gale3.jpg">
+                </div>
+                <br>
+                <div class="requadro">
+                    <pre>
+                        <code>
+                            &lt;div&gt;
+            &lt;h2&gt;Imagen con Estilo de Miniatura&lt;/h2&gt;
+            &lt;img class=&quot;img-thumbnail&quot; src=&quot;gale3.jpg&quot; &gt;
+          &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+                <br>
+                <div>
+                    <h2>Imagen con Efecto Hover Zoom</h2>
+                    <img class="img-hover-zoom" src="gale3.jpg">
+                </div>
+                <br>
+                <div class="requadro">
+                    <pre>
+                        <code>
+                            &lt;div&gt;
+            &lt;h2&gt;Imagen con Efecto Hover Zoom&lt;/h2&gt;
+            &lt;img class=&quot;img-hover-zoom&quot; src=&quot;gale3.jpg&quot; &gt;
+          &lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+            </section>
+        </body>
+    </html>
